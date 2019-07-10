@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/include" layout="@layout/content_calibrate" />
+    <RelativeLayout android:id="@id/rl_calibration" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <VideoView android:id="@id/calibrationVideo" android:layout_width="300.0dip" android:layout_height="300.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:backgroundTint="#ff000000" />
+    </RelativeLayout>
+    <TextView android:textSize="20.0dip" android:textColor="#ffffffff" android:layout_gravity="bottom|center" android:id="@id/tv_calibrate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="100.0dip" android:text="Start calibration" app:layout_anchor="@id/include" app:layout_anchorGravity="bottom|center" />
+    <Button android:layout_gravity="bottom|center" android:id="@id/btn_calibrate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:text="Next" android:onClick="onNextClicked" app:layout_anchor="@id/include" app:layout_anchorGravity="bottom|center" />
+</android.support.design.widget.CoordinatorLayout>

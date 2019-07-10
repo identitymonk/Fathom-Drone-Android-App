@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="#ff2c3e50" android:layout_width="fill_parent" android:layout_height="170.0dip">
+        <ImageView android:background="#ff3b3b3b" android:padding="5.0dip" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:src="@drawable/frontmin" />
+        <TextView android:textSize="12.0dip" android:textColor="#ff2c3e50" android:background="#ffababab" android:layout_width="90.0dip" android:layout_height="15.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="120.0dip" android:text="Fathom One" android:textAlignment="center" />
+        <TextView android:textSize="12.0dip" android:textColor="#ff7f8c8d" android:layout_width="150.0dip" android:layout_height="18.0dip" android:layout_marginLeft="120.0dip" android:layout_marginTop="20.0dip" android:text="Uptime" />
+        <TextView android:textSize="25.0dip" android:textColor="#ffbdc3c7" android:id="@id/tvDiveLogUptime" android:layout_width="150.0dip" android:layout_height="30.0dip" android:layout_marginLeft="120.0dip" android:layout_marginTop="40.0dip" android:text="" />
+        <TextView android:textSize="12.0dip" android:textColor="#ff7f8c8d" android:layout_width="150.0dip" android:layout_height="18.0dip" android:layout_marginLeft="250.0dip" android:layout_marginTop="20.0dip" android:text="Dive time" />
+        <TextView android:textSize="25.0dip" android:textColor="#ffbdc3c7" android:id="@id/tvDiveLogFlighttime" android:layout_width="150.0dip" android:layout_height="30.0dip" android:layout_marginLeft="250.0dip" android:layout_marginTop="40.0dip" android:text="" />
+        <TextView android:textSize="12.0dip" android:textColor="#ff7f8c8d" android:layout_width="150.0dip" android:layout_height="18.0dip" android:layout_marginLeft="120.0dip" android:layout_marginTop="80.0dip" android:text="Dives" />
+        <TextView android:textSize="25.0dip" android:textColor="#ffbdc3c7" android:id="@id/tvDiveLogFlightCount" android:layout_width="150.0dip" android:layout_height="30.0dip" android:layout_marginLeft="120.0dip" android:layout_marginTop="100.0dip" android:text="" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="250.0dip" />
+        <Button android:id="@id/btn_convert_videos" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="180.0dip" android:text="Convert videos" android:onClick="convertVideos" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rlDiveLogConvertingOverlay" android:background="#ff2c3e50" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:id="@id/progressBar5" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="80.0dip" android:layout_centerHorizontal="true" style="?android:attr/progressBarStyleLarge" />
+        <TextView android:textColor="#ffffffff" android:gravity="center" android:layout_width="fill_parent" android:layout_height="100.0dip" android:text="Converting..." />
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+    <android.support.design.widget.FloatingActionButton android:layout_gravity="end|bottom|center" android:id="@id/fab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/fab_margin" app:srcCompat="@android:drawable/ic_dialog_email" />
+    <TextView android:textSize="20.0dip" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_marginLeft="0.0dip" android:layout_marginTop="100.0dip" android:text="CONNECT TO FATHOM NETWORK" android:textAlignment="center" />
+    <Button android:textSize="20.0dip" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_marginLeft="0.0dip" android:layout_marginTop="200.0dip" android:text="GO TO WIFI SETTINGS" android:onClick="goToWifiScreen" android:textAlignment="center" />
+    <TextView android:textSize="20.0dip" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_marginLeft="0.0dip" android:layout_marginTop="400.0dip" android:text="I'm connected. Go to lobby" android:onClick="goToMainScreen" android:textAlignment="center" />
+</android.support.design.widget.CoordinatorLayout>

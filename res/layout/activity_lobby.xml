@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:background="#ff000000" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:id="@id/tvConnectionStatus" android:background="#ffff0000" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="30.0dip" android:text="Drone is connected" />
+        <RelativeLayout android:layout_width="350.0dip" android:layout_height="110.0dip" android:layout_marginTop="50.0dip" android:layout_centerHorizontal="true">
+            <Button android:textSize="30.0dip" android:layout_gravity="left" android:id="@id/btnPilot" android:background="@drawable/dive" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fontFamily="sans-serif-thin" android:textAlignment="center" />
+            <Button android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:onClick="goToPilotScreen" />
+        </RelativeLayout>
+        <RelativeLayout android:background="#11ff00ff" android:layout_width="350.0dip" android:layout_height="110.0dip" android:layout_marginTop="170.0dip" android:layout_centerHorizontal="true">
+            <Button android:textSize="30.0dip" android:id="@id/btnObserve" android:background="@drawable/observe" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true" android:fontFamily="sans-serif-thin" />
+            <Button android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:onClick="goToObserverScreen" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="350.0dip" android:layout_height="110.0dip" android:layout_marginTop="290.0dip" android:layout_centerHorizontal="true">
+            <Button android:textSize="30.0dip" android:background="@drawable/divelog" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fontFamily="sans-serif-thin" />
+            <Button android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:onClick="goToFlightRecordScreen" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="350.0dip" android:layout_height="110.0dip" android:layout_marginTop="410.0dip" android:layout_centerHorizontal="true" android:onClick="goToFlightRecordScreen">
+            <Button android:textSize="30.0dip" android:background="@drawable/options" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fontFamily="sans-serif-thin" />
+            <Button android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:onClick="goToCalibrateScreen" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <android.support.design.widget.FloatingActionButton android:layout_gravity="end|bottom|center" android:id="@id/fab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/fab_margin" app:srcCompat="@android:drawable/ic_dialog_email" />
+</android.support.design.widget.CoordinatorLayout>

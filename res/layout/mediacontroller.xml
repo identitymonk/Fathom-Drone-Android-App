@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/mediacontroller_bg" android:layout_width="fill_parent" android:layout_height="74.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/mediacontroller_play_pause" android:background="@drawable/mediacontroller_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/mediacontroller_pause" android:layout_centerVertical="true" android:contentDescription="@string/mediacontroller_play_pause" />
+        <TextView android:id="@id/mediacontroller_time_current" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/mediacontroller_play_pause" android:layout_centerVertical="true" style="@style/MediaController_Text" />
+        <TextView android:id="@id/mediacontroller_time_total" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/MediaController_Text" />
+        <SeekBar android:id="@id/mediacontroller_seekbar" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="1000" android:layout_toLeftOf="@id/mediacontroller_time_total" android:layout_toRightOf="@id/mediacontroller_time_current" android:layout_centerVertical="true" style="@style/MediaController_SeekBar" />
+    </RelativeLayout>
+    <TextView android:ellipsize="marquee" android:id="@id/mediacontroller_file_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:singleLine="true" style="@style/MediaController_Text" />
+</LinearLayout>

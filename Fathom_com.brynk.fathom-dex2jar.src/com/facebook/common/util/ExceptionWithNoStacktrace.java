@@ -1,0 +1,21 @@
+package com.facebook.common.util;
+
+public class ExceptionWithNoStacktrace extends Exception
+{
+  public ExceptionWithNoStacktrace(String paramString)
+  {
+    super(paramString);
+  }
+
+  public Throwable fillInStackTrace()
+  {
+    monitorenter;
+    monitorexit;
+    return this;
+  }
+}
+
+/* Location:           C:\Users\c_jealom1\Documents\Scripts\Android\Fathom_com.brynk.fathom\Fathom_com.brynk.fathom-dex2jar.jar
+ * Qualified Name:     com.facebook.common.util.ExceptionWithNoStacktrace
+ * JD-Core Version:    0.6.0
+ */

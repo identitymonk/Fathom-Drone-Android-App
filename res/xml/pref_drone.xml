@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference android:maxLines="1" android:singleLine="true" android:selectAllOnFocus="true" android:capitalize="words" android:title="@string/pref_title_drone_ip" android:key="drone_ip" android:summary="You must restart this app for changes to take affect." android:inputType="textCapWords" />
+    <EditTextPreference android:maxLines="1" android:singleLine="true" android:selectAllOnFocus="true" android:capitalize="words" android:title="@string/pref_title_temperature_cutoff" android:key="temperature_cutoff" android:summary="You must restart this app for changes to take affect." android:inputType="number" />
+    <Preference android:enabled="true" android:title="Firmware Version" android:selectable="false" android:key="firmware_version" android:summary="1.0" />
+    <SwitchPreference android:title="Invert controls" android:key="should_invert" android:defaultValue="false" />
+</PreferenceScreen>

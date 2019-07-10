@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <header android:title="@string/pref_header_drone" android:fragment="com.brynk.fathom.controllers.SettingsActivity$DronePreferenceFragment" />
+    <header android:id="@id/header_accel" android:title="Calibrate accelerometer" />
+    <header android:id="@id/header_compass" android:title="Calibrate compass" />
+    <header android:id="@id/header_calibrate_depth" android:title="Calibrate depth" />
+    <header android:id="@id/header_update_firmware" android:title="Update firmware" />
+    <header android:id="@id/header_manage_networks" android:title="Manage networks" />
+    <header android:id="@id/header_reboot_drone" android:title="Reboot drone" />
+</preference-headers>
